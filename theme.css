@@ -1,5 +1,7 @@
 @import url(style/auto-number.css);
 @import url(style/h1-h6-z-index.css);
+@import url(style/link-icon.css);
+@import url(style/link-icon-color.css);
 
 :root {
     /* 主色 */
@@ -10,8 +12,10 @@
     --b3-theme-primary-lightest: #cf56594d;
 
     /* 增加透明度 */
-    --b3-theme-tm1: #cf56594d;
-    --b3-theme-tm2: #cf56591a;
+    /* --b3-theme-tm1: #cf56594d;
+    --b3-theme-tm2: #cf56591a; */
+    --b3-theme-tm1: #593435;
+    --b3-theme-tm2: #593435;
 
     /* 鼠标悬浮颜色，用在表格中（在白色背景下直接用取色器去--b3-theme-tm1的色彩 */
     /* --b3-theme-hover: #f1cccd; */
@@ -40,7 +44,7 @@
     --b3-theme-on-secondary: #c9c9c9;
     --b3-theme-on-background: #e4e4e4;
     --b3-font-color-gray: #9e9e9e;
-    --b3-font-color-gray-tm: #80808080;
+    --b3-font-color-gray-tm: gray;
     --b3-font-color-hover: #202124;
     --b3-font-color-empty: #9fa5a675;
     --b3-font-color-oncard: #fefcfe;
@@ -71,7 +75,7 @@
     --b3-tab-background-hover: #fff;
 
     /* 菜单 */
-    --b3-menu-background: #f8f9fa;
+    --b3-menu-background: #252525;
 
     /* 提示气泡颜色 */
     --b3-tooltips-color: gray;
@@ -81,8 +85,8 @@
     --b3-card-warning-color: var(--b3-font-color-oncard);
     --b3-card-info-color: var(--b3-font-color-oncard);
     --b3-card-success-color: var(--b3-font-color-oncard);
-    --b3-card-error-background: #940115;
-    --b3-card-warning-background: #944e10;
+    --b3-card-error-background: #8a3540;
+    --b3-card-warning-background: #80522a;
     --b3-card-info-background: #384b76;
     --b3-card-success-background: #325342;
 
@@ -92,44 +96,44 @@
     --b3-card-darker-green: #325342;
 
     /* 13种自定义文字颜色 */
-    --b3-font-color1: #fbbfbc;
-    --b3-font-color2: #fed4a4;
-    --b3-font-color3: #ffe9a1;
-    --b3-font-color4: #b7edb1;
-    --b3-font-color5: #d1ecf1;
-    --b3-font-color6: #bacefd;
-    --b3-font-color7: #cdb2fa;
-    --b3-font-color8: #7e7d7d;
+    --b3-font-color1: #ff9999;
+    --b3-font-color2: #ffdb99;
+    --b3-font-color3: #ffff99;
+    --b3-font-color4: #a2ffa2;
+    --b3-font-color5: #99ffff;
+    --b3-font-color6: #9999ff;
+    --b3-font-color7: #ffa2ff;
+    --b3-font-color8: #cccccc;
     --b3-font-color9: white;
     --b3-font-color10: white;
     --b3-font-color11: white;
     --b3-font-color12: white;
     --b3-font-color13: gray;
     /* 13种自定义背景颜色 */
-    --b3-font-background1: #d83931;
-    --b3-font-background2: #de7802;
-    --b3-font-background3: #856404;
-    --b3-font-background4: #2ea121;
-    --b3-font-background5: #35737d;
-    --b3-font-background6: #245bdb;
-    --b3-font-background7: #6425d0;
-    --b3-font-background8: #80808099;
-    --b3-font-background9: #fc2e1b;
-    --b3-font-background10: #f6df5b;
-    --b3-font-background11: #2d48f8;
-    --b3-font-background12: #2a9f65;
+    --b3-font-background1: #660000;
+    --b3-font-background2: #664200;
+    --b3-font-background3: #666600;
+    --b3-font-background4: #006f00;
+    --b3-font-background5: #006666;
+    --b3-font-background6: #000066;
+    --b3-font-background7: #6f006f;
+    --b3-font-background8: #808080;
+    --b3-font-background9: #e04d2b;
+    --b3-font-background10: #f9db45;
+    --b3-font-background11: #24abda;
+    --b3-font-background12: #72d376;
     --b3-font-background13: transparent;
 
     /* PDF标注颜色 */
     --b3-pdf-sidebar-width: 200px;
     --b3-pdf-offset: 0;
-    --b3-pdf-background1: #ffb3ac;
-    --b3-pdf-background2: #ffec84;
-    --b3-pdf-background3: #ffff57;
-    --b3-pdf-background4: #80ff80;
-    --b3-pdf-background5: #98eaff;
-    --b3-pdf-background6: #91d5ff;
-    --b3-pdf-background7: #d4b8f8;
+    --b3-pdf-background1: var(--b3-font-background1);
+    --b3-pdf-background2: var(--b3-font-background2);
+    --b3-pdf-background3: var(--b3-font-background3);
+    --b3-pdf-background4: var(--b3-font-background4);
+    --b3-pdf-background5: var(--b3-font-background5);
+    --b3-pdf-background6: var(--b3-font-background6);
+    --b3-pdf-background7: var(--b3-font-background7);
 
     /* 动画效果 */
     --b3-transition: all 0.15s cubic-bezier(0, 0, 0.2, 1) 0ms;
@@ -206,8 +210,8 @@
     /* 高亮 */
     --b3-menu-highlight-color: var(--b3-theme-primary);
     --b3-menu-highlight-focus-color: var(--b3-theme-primary);
-    --b3-search-highlight: yellow;
-    --b3-pdf-selcect-hightlight: yellow;
+    --b3-search-highlight: #967315;
+    --b3-pdf-selcect-hightlight: #967315;
 
     /* 文件树背景高亮颜色 */
     --b3-menu-highlight-background: #dde5ea;
@@ -234,8 +238,8 @@
     --b3-border-dashed: 0.05em dashed #cfcece4d;
     --b3-border-dashed-gray: 0.05em dashed #80808080;
     --b3-border-dashed-gray-wider: 0.1em dashed #80808080;
-    --b3-border-column: 0.05em solid #ffffff4d;
-    --b3-border-column-item: 0.05em solid #80808033;
+    --b3-border-column: 0.05em solid #ffffff15;
+    --b3-border-column-item: 0.05em solid rgba(128, 128, 128, 0.1);
 }
 
 /* ----------------------------------------------------root定义结束---------------------------------------------------- */
@@ -435,7 +439,7 @@ table tr:hover {
 /* -------------------------------------------------高亮和搜索高亮----------------------------------------------- */
 .protyle-wysiwyg [data-node-id] span[data-type="search-mark"],
 mark {
-    background-color: yellow !important;
+    background-color: #ffd55d !important;
     color: black !important;
     border-radius: var(--b3-border-radius-noraml);
     margin: 0px 0px;
@@ -553,14 +557,13 @@ mark {
 }
 
 /* ——————————给超链接（包括导入的PDF文件等）后面加入图标—————————— */
-.item__main a::before,
-.protyle-wysiwyg [data-node-id] span[data-type="a"]:before {
+/* .protyle-wysiwyg [data-node-id] span[data-type="a"]:before {
     content: "💬";
     margin-right: 2px;
     font-size: 80%;
     position: relative;
-    top: -00.1em;
-}
+    top: -0.1em;
+} */
 
 .item__main a:hover,
 .protyle-wysiwyg [data-node-id] span[data-type='a']:hover {
@@ -648,7 +651,7 @@ mark {
 /* 判断 */
 .protyle-wysiwyg [data-node-id] span[data-type='tag'][data-content="判断"]:not(:empty) {
     color: white;
-    background-color: red;
+    background-color: var(--b3-font-background1);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='tag'][data-content="判断"]:not(:empty)::before {
@@ -658,7 +661,7 @@ mark {
 /* 填空 */
 .protyle-wysiwyg [data-node-id] span[data-type='tag'][data-content="填空"]:not(:empty) {
     color: white;
-    background-color: blue;
+    background-color: var(--b3-font-background6);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='tag'][data-content="填空"]:not(:empty)::before {
@@ -668,7 +671,7 @@ mark {
 /* 选择 */
 .protyle-wysiwyg [data-node-id] span[data-type='tag'][data-content="选择"]:not(:empty) {
     color: white;
-    background-color: green;
+    background-color: var(--b3-font-background4);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='tag'][data-content="选择"]:not(:empty)::before {
@@ -680,7 +683,7 @@ mark {
 /* 排序 */
 .protyle-wysiwyg [data-node-id] span[data-type='tag'][data-content="排序"]:not(:empty) {
     color: white;
-    background-color: purple;
+    background-color: var(--b3-font-background7);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='tag'][data-content="排序"]:not(:empty)::before {
@@ -699,7 +702,7 @@ mark {
 
 .protyle-wysiwyg [data-node-id] span[data-type='tag'][data-content="地理"]:not(:empty) {
     color: inherit;
-    background-color: skyblue;
+    background-color: var(--b3-font-background5);
 }
 
 /* ————————————————————给头图上方的标签设置一样的样式，但是不修改颜色———————————————————— */
@@ -826,9 +829,9 @@ mark {
 .protyle-wysiwyg .protyle-action--task,
 .b3-typography .protyle-task {
     content: url(src/dui.svg);
-    width: 22px;
-    height: 22px;
-    top: 5px !important;
+    width: 1.2em;
+    height: 1.2em;
+    top: 0.4em !important;
 }
 
 /* ————————————————————————————————————————复选框选中———————————————————————————————— */
@@ -1466,31 +1469,31 @@ span.b3-list-item__action.b3-tooltips[data-type="more-file"]:hover {
 }
 
 /* ————————————文字大小———————————— */
-.protyle-wysiwyg [data-node-id][custom-f~=1.1] {
+.protyle-wysiwyg [data-node-id][custom-f~="1.1"] {
     font-size: 110%;
 }
 
-.protyle-wysiwyg [data-node-id][custom-f~=1.2] {
+.protyle-wysiwyg [data-node-id][custom-f~="1.2"] {
     font-size: 120%;
 }
 
-.protyle-wysiwyg [data-node-id][custom-f~=1.3] {
+.protyle-wysiwyg [data-node-id][custom-f~="1.3"] {
     font-size: 130%;
 }
 
-.protyle-wysiwyg [data-node-id][custom-f~=1.4] {
+.protyle-wysiwyg [data-node-id][custom-f~="1.4"] {
     font-size: 140%;
 }
 
-.protyle-wysiwyg [data-node-id][custom-f~=1.5] {
+.protyle-wysiwyg [data-node-id][custom-f~="1.5"] {
     font-size: 150%;
 }
 
-.protyle-wysiwyg [data-node-id][custom-f~=1.75] {
+.protyle-wysiwyg [data-node-id][custom-f~="1.75"] {
     font-size: 175%;
 }
 
-.protyle-wysiwyg [data-node-id][custom-f~=2] {
+.protyle-wysiwyg [data-node-id][custom-f~="2"] {
     font-size: 200%;
 }
 
@@ -1554,6 +1557,14 @@ span.b3-list-item__action.b3-tooltips[data-type="more-file"]:hover {
     width: auto !important;
     /* overflow: scroll; */
     white-space: nowrap;
+}
+
+/* 表头和表行格式一致 */
+.protyle-wysiwyg [data-node-id][custom-f~=biaotou] table th {
+    font-weight: normal !important;
+    text-align: left !important;
+    color: inherit !important;
+    background-color: #fdfdfd !important;
 }
 
 /* 通过自定义属性去掉图片边框和阴影 */
@@ -1764,16 +1775,16 @@ span.b3-list-item__action.b3-tooltips[data-type="more-file"]:hover {
 
 
 /* -----------------------------------------------------------------pdf双链-------------------------------------------------------- */
-.textLayer,
+/* .textLayer,
 .pdf__resize {
     mix-blend-mode: darken;
-}
+} */
 
 /* ————————————————————修改PDF双链样式———————————————————— */
 .protyle-wysiwyg [data-node-id] span[data-type='file-annotation-ref'] {
     /* color: gray; */
     /* background-color: var(--b3-theme-background-gray); */
-    color: var(--b3-font-color-oncard);
+    color: var(--b3-font-color8);
     background-color: var(--b3-font-background8);
     display: inline-block;
     position: relative;
@@ -2440,12 +2451,12 @@ strong[style="background-color: var(--b3-font-background13);"]:hover {
 /* 对README文件也设置格子背景 */
 .config-bazaar__readme .item__main {
     background-image:
-        linear-gradient(90deg, rgba(60, 10, 30, 0.06) 2%, transparent 0px),
-        linear-gradient(1turn, rgba(60, 10, 30, 0.06) 2%, transparent 0px);
+        linear-gradient(90deg, rgb(255, 255, 255, 0.05) 2%, transparent 0px),
+        linear-gradient(1turn, rgb(255, 255, 255, 0.05) 2%, transparent 0px);
     background-size: 30px 30px;
     background-position: 50% center;
     text-align: justify;
-    border: 0.05em solid rgba(207, 206, 206, 0.3);
+    border: 0.05em solid rgb(255, 255, 255, 0.05);
 }
 
 /* 圆点背景 */
@@ -2845,7 +2856,7 @@ button.b3-color__square[style*="background-color:var(--b3-pdf"] {
 
 /* ————————————————————设置PDF标注的相关文字———————————————————— */
 button.b3-color__square[style*="background-color:var(--b3-pdf-background"]::before {
-    color: #202124;
+    color: var(--b3-theme-on-background);
     font-family: "Microsoft YaHei";
 }
 
@@ -3021,7 +3032,7 @@ button.b3-color__square[style="background-color:var(--b3-pdf-background7)"]::bef
     transform: none;
     transition: none;
     opacity: 1;
-    color: var(--b3-theme-on-surface);
+    color: var(--b3-theme-on-background);
     background-color: transparent;
     position: static;
     margin: 0;
@@ -3098,7 +3109,7 @@ button.b3-list-item.b3-list-item--two.fn__block .b3-list-item__graphic {
 
 /* 鼠标悬浮时更改图标颜色 */
 button.b3-list-item.b3-list-item--two.fn__block:hover .b3-list-item__graphic {
-    color: var(--b3-font-color-hover);
+    color: var(--b3-theme-on-background);
 }
 
 /* 设置文本颜色 */
@@ -3164,7 +3175,7 @@ button.b3-list-item.b3-list-item--two.fn__block[data-value="%E2%80%8B4"] .b3-lis
     min-width: 50vw !important;
     font-size: 90%;
     /* border: 0.2em solid #ffffff4d; */
-    border: 0.05em solid #ffffff4d;
+    border: 0.05em solid rgba(255, 255, 255, 0.1);
 }
 
 /* ————————————————————设置挂件和模板窗口每个项目的宽度———————————————————— */
@@ -3181,6 +3192,17 @@ button.b3-list-item.b3-list-item--two.fn__block[data-value="%E2%80%8B4"] .b3-lis
 /* 控制表情的内容能够正常显示而不是折叠 */
 .b3-menu.b3-list.b3-list--background .emojis__content {
     display: block !important;
+}
+
+
+/* 去掉模板搜索中的空隙，修复bug */
+.protyle-util .b3-list-item {
+    padding: 0px;
+    border-radius: var(--b3-border-radius-noraml);
+}
+
+.b3-list.fn__flex-1.b3-list--background {
+    padding: 4px 8px;
 }
 
 /* --------------------------------将'/'弹出的选择窗口分为4栏 END-------------------------------------------------- */
@@ -3210,7 +3232,7 @@ iframe[data-src="http://127.0.0.1:6806/widgets/cc-markmap"] {
 
 /* —————————————————————设置上标和下标的颜色———————————————————— */
 sub, sup {
-    color: blue;
+    color: var(--b3-font-color6);
 }
 
 
@@ -3247,6 +3269,14 @@ body.body--win32 {
 textarea.b3-text-filed.fn__flex-1 {
     border: 1px solid transparent;
     resize: none;
+}
+
+/* 设置13种颜色中4种谷歌背景的字体颜色为白色 */
+.p[style="background-color: var(--b3-font-background9);"],
+.p[style="background-color: var(--b3-font-background10);"],
+.p[style="background-color: var(--b3-font-background11);"],
+.p[style="background-color: var(--b3-font-background12);"] {
+    color: white;
 }
 
 /* -------------------------------------------------对整个文档实行自定义属性--------------------------------------------- */
