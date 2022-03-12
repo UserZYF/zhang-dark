@@ -2598,7 +2598,7 @@ strong[style="background-color: var(--b3-font-background13);"]:hover {
 }
 
 .b3-text-filed:hover, .pcr-app .pcr-interaction .pcr-result:hover {
-    border-bottom: 1px solid #202124 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5) !important;
     color: var(--b3-font-color-hover);
     background-color: var(--b3-theme-hover-gray);
     box-shadow: none;
@@ -2733,30 +2733,35 @@ strong[style="color: var(--b3-font-color13);"] {
 .b3-color__square[data-type="color"][style="background-color:var(--b3-font-color9)"]:before {
     content: "宋";
     font-family: "宋体";
+    color: var(--b3-theme-on-background);
 }
 
 .b3-color__square[data-type="color"][style="background-color:var(--b3-font-color10)"]:before {
     content: "楷";
     font-family: "楷体";
     font-size: 1.4em;
+    color: var(--b3-theme-on-background);
 }
 
 .b3-color__square[data-type="color"][style="background-color:var(--b3-font-color11)"]:before {
     content: "黑";
     font-family: "微软雅黑";
+    color: var(--b3-theme-on-background);
 }
 
 /* 设置曲线样式 */
 .b3-color__square[data-type="color"][style="background-color:var(--b3-font-color12)"]:before {
     content: "虚";
-    text-decoration: underline dashed black;
+    text-decoration: underline dashed var(--b3-theme-on-background);
     text-underline-offset: 3px;
+    color: var(--b3-theme-on-background);
 }
 
 .b3-color__square[data-type="color"][style="background-color:var(--b3-font-color13)"]:before {
     content: "曲";
-    text-decoration: underline wavy black;
+    text-decoration: underline wavy var(--b3-theme-on-background);
     text-underline-offset: 2px;
+    color: var(--b3-theme-on-background);
 }
 
 /* ——————————————————————为样式中13种背景设置格式—————————————————————— */
@@ -2840,12 +2845,12 @@ strong[style="color: var(--b3-font-color13);"] {
 .b3-color__square[data-type="backgroundColor"][style="background-color:var(--b3-font-background13)"]:before {
     content: "空";
     color: transparent;
-    border-bottom: 2px solid black !important;
+    border-bottom: 2px solid var(--b3-theme-on-background) !important;
     box-sizing: border-box;
 }
 
 .b3-color__square[data-type="backgroundColor"][style="background-color:var(--b3-font-background13)"]:hover:before {
-    color: black;
+    color: var(--b3-theme-on-background);
 }
 
 /* ————————————————————设置PDF标注的格式———————————————————— */
