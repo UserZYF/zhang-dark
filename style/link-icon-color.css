@@ -30,7 +30,7 @@
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="ld246.com"]:not(:empty),
 .b3-typography a[href *="ld246.com"] {
-    color: #da3939 !important;
+    color: var(--b3-theme-on-background) !important;
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="music.163.com"]:not(:empty),
@@ -105,7 +105,7 @@
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="baidu.com"]:not(:empty),
 .b3-typography a[href *="baidu.com"] {
-    color: #1c25de !important;
+    color: #444eff !important;
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="tieba.baidu.com"]:not(:empty),
@@ -235,7 +235,7 @@
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="baike.baidu.com"]:not(:empty),
 .b3-typography a[href *="baike.baidu.com"] {
-    color: #3c44e3 !important;
+    color: #676fff !important;
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="apple.com.cn"]:not(:empty),
