@@ -90,7 +90,7 @@
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="zcool.com.cn"]:not(:empty),
 .b3-typography a[href *="zcool.com.cn"] {
-    color: #fdd001 !important;
+    color: var(--b3-theme-on-background) !important;
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="ixigua.com"]:not(:empty),
@@ -105,7 +105,7 @@
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="baidu.com"]:not(:empty),
 .b3-typography a[href *="baidu.com"] {
-    color: #444eff !important;
+    color: #1c25de !important;
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="tieba.baidu.com"]:not(:empty),
@@ -220,7 +220,7 @@
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="wolai.com"]:not(:empty),
 .b3-typography a[href *="wolai.com"] {
-    color: #fff !important;
+    color: var(--b3-theme-on-background) !important;
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="auth.alipay.com"]:not(:empty),
@@ -235,12 +235,12 @@
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="baike.baidu.com"]:not(:empty),
 .b3-typography a[href *="baike.baidu.com"] {
-    color: #676fff !important;
+    color: #3c44e3 !important;
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="apple.com.cn"]:not(:empty),
 .b3-typography a[href *="apple.com.cn"] {
-    color: #e4e4e4 !important;
+    color: var(--b3-theme-on-background) !important;
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="huawei.com"]:not(:empty),
@@ -313,13 +313,13 @@
 /* instapaper */
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="instapaper.com"]:not(:empty),
 .b3-typography a[href *="instapaper.com"] {
-    color: #e4e4e4 !important;
+    color: var(--b3-theme-on-background) !important;
 }
 
 /* GitHub */
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="github.com"]:not(:empty),
 .b3-typography a[href *="github.com"] {
-    color: #e4e4e4 !important;
+    color: var(--b3-theme-on-background) !important;
 }
 
 /* 谷歌翻译 */
