@@ -266,9 +266,9 @@
     --b3-border-radius-math: 0px 0px 3px 3px;
 
     /* ————————————————————边框—————————————————— */
-    --b3-border-color1: #cfcece4d;
+    --b3-border-color1: #545353;
     --b3-border-normal: 1px solid #cfcece4d;
-    --b3-border-wider: 2px solid #cfcece4d;
+    --b3-border-wider: 2px solid #545353;
     --b3-border-dashed: 1px dashed #cfcece4d;
     --b3-border-dashed-gray: 1px dashed #80808080;
     --b3-border-dashed-gray-wider: 2px dashed #80808080;
