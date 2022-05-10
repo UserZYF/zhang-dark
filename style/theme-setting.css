@@ -54,7 +54,7 @@
     /* 卡片中文字颜色 */
     --b3-font-color-oncard: #fefcfe;
     /* 图标和说明文字颜色 */
-    --b3-theme-on-surface: gray;
+    --b3-theme-on-surface: rgba(255, 255, 255, 0.5);
     /* 错误时文字颜色，保持默认即可 */
     --b3-theme-on-error: white;
     /* 上标和下标文字颜色 */
