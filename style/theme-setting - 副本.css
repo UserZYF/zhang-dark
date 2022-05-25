@@ -61,7 +61,7 @@
     --b3-theme-sub-color: #a7a7ff;
 
     /* 字体 */
-    --b3-font-family: "LXGWWenKai-Regular", "仓耳今楷03", 'WWJNWLKQ', 'zh quote', -apple-system, BlinkMacSystemFont, "PingFang SC", "HarmonyOS Sans SC", "Noto Sans", "Noto Sans CJK SC", "Microsoft YaHei UI", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --b3-font-family: "仓耳今楷03", 'WWJNWLKQ', 'zh quote', -apple-system, BlinkMacSystemFont, "PingFang SC", "HarmonyOS Sans SC", "Noto Sans", "Noto Sans CJK SC", "Microsoft YaHei UI", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --b3-font-family-code: "JetBrains Mono", SFMono-Regular, Menlo, Monaco, Consolas, "HarmonyOS Sans SC", "Microsoft YaHei", "Liberation Mono", "Courier New", monospace;
     --b3-font-family-emoji: "Segoe UI Emoji", "Segoe UI Symbol", "Segoe UI", "Apple Color Emoji", "Twemoji Mozilla", "Noto Color Emoji", "Android Emoji";
     --b3-font-family-graph: mononoki;
@@ -107,33 +107,33 @@
     --b3-card-darker-green: #325342;
 
     /* 13种自定义文字颜色 */
-    --b3-font-color1: #ffdad6;
-    --b3-font-color2: #ffddb5;
-    --b3-font-color3: #ffe16a;
-    --b3-font-color4: #a9f5a4;
-    --b3-font-color5: #93f1ff;
-    --b3-font-color6: #d6e2ff;
-    --b3-font-color7: #e6deff;
+    --b3-font-color1: #ff9999;
+    --b3-font-color2: #ffdb99;
+    --b3-font-color3: #ffff99;
+    --b3-font-color4: #a2ffa2;
+    --b3-font-color5: #99ffff;
+    --b3-font-color6: #9999ff;
+    --b3-font-color7: #ffa2ff;
     --b3-font-color8: #cccccc80;
-    --b3-font-color9: #b22c0b;
-    --b3-font-color10: #6e5d00;
-    --b3-font-color11: #006686;
-    --b3-font-color12: #006e1f;
+    --b3-font-color9: white;
+    --b3-font-color10: white;
+    --b3-font-color11: white;
+    --b3-font-color12: white;
     --b3-font-color13: gray;
 
     /* 13种自定义背景颜色 */
-    --b3-font-background1: rgba(226, 80, 88, 0.28);
-    --b3-font-background2: rgba(219, 95, 0, 0.28);
-    --b3-font-background3: rgba(200, 148, 44, 0.28);
-    --b3-font-background4: rgba(27, 167, 132, 0.28);
-    --b3-font-background5: rgba(44, 134, 252, 0.28);
-    --b3-font-background6: rgba(128, 111, 241, 0.28);
-    --b3-font-background7: rgba(184, 82, 235, 0.28);
-    --b3-font-background8: rgba(102, 102, 102, 0.2);
-    --b3-font-background9: rgba(255, 180, 161, 0.7);
-    --b3-font-background10: rgba(227, 197, 48, 0.7);
-    --b3-font-background11: rgba(105, 210, 255, 0.7);
-    --b3-font-background12: rgba(123, 220, 126, 0.7);
+    --b3-font-background1: #660000;
+    --b3-font-background2: #664200;
+    --b3-font-background3: #666600;
+    --b3-font-background4: #006f00;
+    --b3-font-background5: #006666;
+    --b3-font-background6: #000066;
+    --b3-font-background7: #6f006f;
+    --b3-font-background8: #5f5f5f;
+    --b3-font-background9: #e04d2b;
+    --b3-font-background10: #f9db45;
+    --b3-font-background11: #24abda;
+    --b3-font-background12: #72d376;
     --b3-font-background13: transparent;
 
     /* PDF标注颜色 */
